@@ -1,0 +1,32 @@
+@import '@scss/vars.scss';
+
+.header {
+	padding: 16px 0;
+	background-color: $c-def-light-grey;
+
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 50;
+	transition: $transition-md;
+
+	&Wrapper {
+		@extend %container;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		align-items: center;
+
+		&Left {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&Right {
+			display: flex;
+			align-items: center;
+			
+			justify-content: flex-end;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+@import '@scss/vars.scss';
+@import './reset.scss';
+
+html {
+	font-size: 62.5%;
+}
+
+ body {
+	font-family: 'Montserrat', sans-serif;
+ 	color: $c-def-dark-grey;
+	font-size: $fz-def;
+// 	background-color: $c-def-grey;
+ }
+
+.app {
+	min-height: 100vh;
+}

@@ -1,0 +1,32 @@
+.wrapper{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+
+    p{
+        padding-top: 10px;
+        width: 350px;
+    }
+
+    h2{
+        font-size: $fz-xl;
+        width: 400px;
+        padding-top: 10px
+    }
+}
+.contentWrapper{
+    @extend %container;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.advSection{
+    background-image: url("images/advback.png");
+    background-size: 100%;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
