@@ -24,7 +24,8 @@
 }
 .advSection{
     background-image: url("images/advback.png");
-    background-size: 100%;
+     background-size: cover;
+    background-repeat: no-repeat;
     height: 65vh;
     display: flex;
     align-items: center;
