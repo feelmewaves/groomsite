@@ -1,14 +1,10 @@
 import s from './ThirdSection.module.scss'
 import { useEffect, useState } from 'react'
-import EnrollBtn from '@UI/EnrollBtn'
-
-
-
-
+import EnrollBtn from '@ui/EnrollBtn'
 
 const ThirdSection = () => {
 
-    const [currentIndex, setCurrentIndex] = useState(0)
+	const [currentIndex, setCurrentIndex] = useState(0)
 	const [isTimerActive, setIsTimerActive] = useState(true)
 
 	useEffect(() => {
@@ -39,18 +35,18 @@ const ThirdSection = () => {
 
 	return (
 		<section className={s.thirdSection}>
-            <h2>Хотите так же? Приходите к нам!</h2>
+			<h2>Хотите так же? Приходите к нам!</h2>
 			<div className={s.contentWrapper}>
 				<div className={s.wrapper}>
-                    <img src={`images/dogbefore.jpg`} />
-                    <h3>До преображения</h3>
+					<img src={`images/dogbefore.jpg`} />
+					<h3>До преображения</h3>
 				</div>
-                <div className={s.wrapper}>
-                    <img src={`images/dogafter.jpg`} />
-                    <h3>После преображения</h3>
+				<div className={s.wrapper}>
+					<img src={`images/dogafter.jpg`} />
+					<h3>После преображения</h3>
 				</div>
 			</div>
-            <EnrollBtn />
+			<EnrollBtn />
 		</section>
 	)
 }

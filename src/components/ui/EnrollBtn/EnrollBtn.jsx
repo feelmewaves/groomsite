@@ -1,8 +1,11 @@
 import s from './EnrollBtn.module.scss'
 
-const EnrollBtn = () => {
+const EnrollBtn = ({togglePopup}) => {
 	return (
-		<button className={s.enrollBtn}>
+		<button 
+			className={s.enrollBtn}
+			onClick={togglePopup}	
+		>
 			<span>Записаться</span>
 		</button>
 	)
