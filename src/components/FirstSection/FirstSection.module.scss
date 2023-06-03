@@ -3,6 +3,7 @@
 .firstSection{
     @extend %section;
     background: $c-def-light-grey;
+    background-size: cover;
     h2{
         
         margin-bottom: 40px;

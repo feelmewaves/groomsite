@@ -1,0 +1,65 @@
+@import '@scss/vars.scss';
+
+
+.servicesAndPricesSection{
+    @extend %section;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    h2{
+        
+        margin-bottom: 40px;
+    }
+
+    
+
+.contentWrapper{
+    @extend %container;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .blocks{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 23%;
+            background-color: $c-def-light-grey;
+            border-radius: 15px;
+            padding: 15px;
+            height: 240px;
+
+            p{
+                width: 70%;
+                text-align: center;
+                padding-top: 10px;
+
+            }
+
+
+           img{
+            border-radius: 50px;
+           }
+
+        }
+    }
+    .changeInfo{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .info{
+            width: 40%;
+        }
+    }
+}
+}
