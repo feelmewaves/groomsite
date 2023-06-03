@@ -1,4 +1,5 @@
 import s from './AboutUsSection.module.scss'
+import Carousel from '@components/Carousel'
 
 const AboutUsSection = () => {
 
@@ -7,7 +8,12 @@ const AboutUsSection = () => {
 				<h2>Почему нам доверяют</h2>
 				<div className={s.contentWrapper}>
 					<div className={s.slider}>
-                    <img src={`images/aboutus.jpg`} />
+                        <Carousel>
+                            <div className={s.item}><img src={`images/aboutus.jpg`} /></div>
+                            <div className={s.item}><img src={`images/aboutus.jpg`} /></div>
+                            <div className={s.item}><img src={`images/aboutus.jpg`} /></div>
+                        </Carousel>
+                   
                     </div>
                     <div className={s.wrapper}>
                         <h3>Каждый день начинается с улыбки, если в доме есть питомец!</h3>
