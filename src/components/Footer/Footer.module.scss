@@ -2,35 +2,27 @@
 
 .footer {
 	background-color: $c-def-light-grey;
-	position: fixed;
+	
 	left: 0;
 	right: 0;
 	bottom: 0;
 	z-index: 100;
 
-	.wrapper {
+	.leftWrapper {
 		@extend %container;
 		padding: 25px 15px;
 		display: flex;
+		align-items: center;
+		flex-direction: row;
 		justify-content: space-between;
 		color: $c-def-dark-grey;
-		align-items: center;
-		position: relative;
-	}
-
-	.leftWrapper {
-		display: flex;
-		align-items: center;
-
-		.logo {
-			margin-right: 90px;
-		}
-
+		
+	
 		.secondPart {
 			position: relative;
 
 			ul {
-				padding-left: 20px;
+				
 
 				li {
 					& + li {
@@ -43,46 +35,16 @@
 
 	.thirdPart {
 		ul {
-			margin-top: 10px;
+			
 
 			li {
-				text-decoration: underline;
+				
 
 				& + li {
-					margin-top: 5px;
+					margin-top: 10px;
 				}
 			}
 		}
 	}
 
-	.toggleVisibility {
-		position: absolute;
-		width: 100px;
-		height: 26px;
-		background: $c-def-dark-grey;
-		border-radius: $br-sm $br-sm 0 0;
-		top: -24px;
-		left: 50%;
-		transform: translate(-50%, 0);
-		cursor: pointer;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		transition: $transition;
-
-		// &:hover {
-		// 	background-color: $c-dark-grey;
-		// }
-
-		// svg {
-		// 	transform: rotate(180deg) translateY(-1px);
-		// 	transform: $transition;
-		// }
-		// &:hover svg {
-		// 	color: $c-def-green;
-		// }
-		// &.open svg {
-		// 	transform: rotate(0deg) translateY(-1px);
-		// }
-	}
 }

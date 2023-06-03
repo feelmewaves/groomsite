@@ -2,13 +2,13 @@ import s from './Footer.module.scss'
 
 const Footer = () => {
     return (
-        <div className={s.wrapper}>
+        <div className={s.footer}>
 				<div className={s.leftWrapper}>
 					<div className={s.logo}>
-						<img src='logo-2.svg' alt='logo' />
+					<img src='logo2.png' alt='logo' />
 					</div>
 					<div className={s.secondPart}>
-                    <h3>Услуги</h3>
+                    	<h3>Услуги</h3>
 						<ul>
 							<li>
 								<a href='#'>Стрижка</a>
@@ -24,7 +24,7 @@ const Footer = () => {
 							</li>
 						</ul>
 					</div>
-				</div>
+				
 				<div className={s.thirdPart}>
 					<h3>О компании</h3>
 					<ul>
@@ -52,6 +52,7 @@ const Footer = () => {
 							<a href=''>Политика конфиденциальности</a>
 						</li>
 					</ul>
+				</div>
 				</div>
 			</div>
     )

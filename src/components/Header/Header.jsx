@@ -2,6 +2,7 @@ import s from './Header.module.scss'
 import { useEffect, useState } from 'react'
 import Nav from '../Nav/Nav'
 
+
 const Header = () => {
 	const [isOnTop, setIsOnTop] = useState(true)
 
