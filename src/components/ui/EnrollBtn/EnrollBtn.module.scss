@@ -2,12 +2,11 @@
 
 .enrollBtn {
 	width: 100%;
-	max-width: 220px;
+	max-width: 250px;
 	padding: 15px 8px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	column-gap: 10px;
 	color: $c-def-white;
 	font-weight: 700;
 	background-color: $c-orange;
@@ -18,5 +17,15 @@
 	&:hover {
 		background-color: $c-light-orange;
 		color: $c-orange;
+	}
+	&:focus {
+		background-color: #c2383d;
+		color: $c-def-white;
+	}
+
+
+	span{
+		font-family: 'Montserrat';
+
 	}
 }

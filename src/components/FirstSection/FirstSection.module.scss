@@ -4,22 +4,24 @@
     @extend %section;
     background: $c-def-light-grey;
     background-size: cover;
-    h2{
-        
-        margin-bottom: 40px;
+    h1{
+        font-size: $fz-xxl;
+        line-height: 0.9;
     }
 }
 
 .wrapper{
     display: flex;
-    align-items: flex-start;
+   
     flex-direction: column;
     justify-content: center;
     margin-top: 30px;
 
     p{
         padding-top: 10px;
-        width: 350px;
+        font-family: 'Montserrat';
+        font-size: $fz-mds;
+    
     }
 
     h1{

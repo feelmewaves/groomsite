@@ -15,8 +15,8 @@ const FirstSection = () => {
 			<div className={s.contentWrapper}>
 				<div className={s.wrapper}>
 					<p>Груминг в Калининграде</p>
-					<h1>Порадуйте своего питомца</h1>
-					<p>Запишитесь на стрижку и получите скидку 15% на первое знакомство</p>
+					<h1>Порадуйте<br/> своего питомца</h1>
+					<p>Запишитесь на стрижку и получите<br/> скидку 15% на первое знакомство</p>
 					<EnrollBtn togglePopup={togglePopup}/>
 				</div>
 				<img src={`images/firstsec.jpg`} />
