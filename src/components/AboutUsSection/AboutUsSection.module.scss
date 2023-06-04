@@ -11,24 +11,27 @@
         
     }
 }
+.contentWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
-.wrapper{
+.info{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
+    padding: 30px;
 
-    p{
-        padding-top: 10px;
-        width: 560px;
-    }
+   
 
     .numberBlock{
         display: flex;
         flex-direction: row;
          align-items: flex-start;
          justify-content: space-between;
-         width: 90%;
+        
          padding-top: 20px;
 
 
@@ -38,15 +41,8 @@
             align-items: flex-start;
             justify-content: center;
             
-            
-
            .boldNumb{
             font-size: $fz-xl;
-           }
-
-           .span{
-            width: 140px;
-            align-self: center;
            }
         }
     }

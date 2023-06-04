@@ -10,32 +10,32 @@ const AboutUsSection = () => {
 					<div className={s.slider}>
                         <Carousel>
                             <div className={s.item}><img src={`images/aboutus.jpg`} /></div>
-                            <div className={s.item}><img src={`images/aboutus.jpg`} /></div>
+                            <div className={s.item}><img src={`images/firstsec.jpg`} /></div>
                             <div className={s.item}><img src={`images/aboutus.jpg`} /></div>
                         </Carousel>
                    
                     </div>
-                    <div className={s.wrapper}>
+                    <div className={s.info}>
                         <h3>Каждый день начинается с улыбки, если в доме есть питомец!</h3>
                         <p>Добро пожаловать на сайт груминг-студии "Pet House"!<br />
-                        Мы можем красиво полстричь вашего питомца, выполнить чистку, а также побаловать SPA-процедурами. В нашей студии работают опытные мастера, которые имеют ветеринарное образование и просто обожают животных.<br /> <br/>
-                        Вы можете быть уверены, что с вашим четвероногим быстро найдут общий язык и предложат максимум полезных и приятных процедур. Работаем только с профессиональной косметикой.</p>
+                        Мы можем красиво полстричь вашего питомца, выполнить чистку,<br/>а также побаловать SPA-процедурами. В нашей студии работают<br/>опытные мастера, которые имеют ветеринарное образование<br/>и просто обожают животных.<br /> <br/>
+                        Вы можете быть уверены, что с вашим четвероногим быстро<br/>найдут общий язык и предложат максимум полезных и приятных<br/>процедур. Работаем только с профессиональной косметикой.</p>
                         <div className={s.numberBlock}>
                             <div className={s.numbers}>
                                 <span className={s.boldNumb}>10</span>
-                                <span>лет</span><span>студии</span>
+                                <p>лет<br/> студии</p>
                             </div>
                             <div className={s.numbers}>
                                 <span className={s.boldNumb}>12</span>
-                                <span>грумеров</span><span>в команде</span>
+                                <p>грумеров<br/>в команде</p>
                             </div>
                             <div className={s.numbers}>
                                 <span className={s.boldNumb}>2570</span>
-                                <span>довольных</span><span>клиентов</span>
+                                <p>довольных<br/>клиентов</p>
                             </div>
                             <div className={s.numbers}>
                                 <span className={s.boldNumb}>3</span>
-                                <span>студии в</span><span>Калининграде</span>
+                                <p>студии в<br/>Калининграде</p>
                             </div>
                         </div>
                     </div>
