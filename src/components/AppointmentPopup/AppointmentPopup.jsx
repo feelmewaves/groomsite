@@ -1,51 +1,83 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import s from './ApointmentPopup.module.scss';
 import { Input } from '../ui/Input';
+import { Select } from '../ui/SelectInput';
+import { DatePicker } from '../ui/DatePicker';
+import { useForm } from 'react-hook-form';
+
+const serviceList = [
+  { value: 'haircut', label: 'Стрижка' },
+  { value: 'procudures', label: 'Гигиенические процедуры' },
+  { value: 'complexes', label: 'SPA-комплексы' },
+  { value: 'staining', label: 'Окрашивание' },
+];
+
 
 export const AppointmentPopup = ({ togglePopup }) => {
+  const { register, handleSubmit, control, formState: { errors } } = useForm();
+  const onSubmit = data => console.log(data);
+
+  function handleClickInner(e) {
+    e.stopPropagation();
+  }
+
+  function handleClickEmpty(e) {
+    togglePopup();
+  }
+
+  useEffect(() => {
+    console.log({ ...register('test') })
+  }, [])
+
   return (
-    <div className={s.popup}>
-      <div className={s.popupInner}>
-        <div class={s.popupTitle}>
+    <div className={s.popup} onClick={handleClickEmpty}>
+      <div className={s.popupInner} onClick={handleClickInner}>
+        <div className={s.popupTitle}>
           <p>Запишитесь к нам</p>
         </div>
-        <div>
-          <p>После заполнения формы с вами свяжется <br/> администратор и подберет удобное время</p>
+        <div className={s.popupDescription}>
+          <p>После заполнения формы с вами свяжется <br /> администратор и подберет удобное время</p>
         </div>
-        <div className={s.formBlock}>
+        <form className={s.formBlock} onSubmit={handleSubmit(onSubmit)}>
           <Input
             label='Ваше имя'
-            name='name'
             placeholder='Иван Иванов'
-            onChange={() => { }}
+            {...register('name')}
           />
           <Input
             label='Ваш телефон'
-            name='tel'
             type='tel'
             placeholder='+7 (999) 352-11-23'
-            onChange={() => { }}
+            {...register('tel')}
           />
           <div className={s.smallInputBlock}>
-            <Input
-              label='Услуга'
+            <Select
+              options={serviceList}
               name='service'
-              placeholder='Что-то'
-              onChange={() => { }}
+              control={control}
             />
-            <Input
-              label='Дата'
-              name='date'
-              placeholder='03-06-2023'
-              onChange={() => { }}
+            <DatePicker 
+              control={control}
+              name='dateService'
             />
           </div>
-
-        </div>
-        <button
-          onClick={togglePopup}
-          className={s.enrollBtn}
-        >Закрыть попап</button>
+          <div className={s.policyBlock}>
+            <input
+              type="checkbox"
+              id="policy-agreement"
+              name="policy-agreement"
+              required
+              className={s.customCheckbox}
+            />
+            <label htmlFor="policy-agreement">
+              <p>Я согласен с <span className={s.policyInfo}>политикой конфиденциальности</span></p>
+            </label>
+          </div>
+          <button
+            className={s.enrollBtn}
+            type="submit"
+          >Отправить</button>
+        </form>
       </div>
     </div>
   )

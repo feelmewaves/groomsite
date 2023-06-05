@@ -40,13 +40,13 @@ import {FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 
     return (
         <div className={s.mainContainer}>
-            <FaChevronLeft className={s.arrow} onclick={handleLeftArrowClick}/>
+            <FaChevronLeft className={s.arrow} onClick={handleLeftArrowClick}/>
             <div className={s.window}>
                 <div className={s.allItemsContainer} style={{
                     tranform: `translateX(${offset}px)`,
                 }}>{pages}</div>
             </div>
-            <FaChevronRight className={s.arrow} onclick={handleRightArrowClick}/>
+            <FaChevronRight className={s.arrow} onClick={handleRightArrowClick}/>
         </div>
     )
 }

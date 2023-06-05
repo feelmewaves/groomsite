@@ -1,6 +1,7 @@
+import React, { forwardRef } from 'react';
 import s from './Input.module.scss';
 
-export function Input({
+export const Input = forwardRef(({
   className,
   label,
   name,
@@ -10,7 +11,7 @@ export function Input({
   onChange,
   meta,
   ...props
-}) {
+}, ref) => {
   return (
     <div>
       {label ? (
@@ -33,8 +34,10 @@ export function Input({
         type={type}
         value={value}
         onChange={onChange}
+        ref={ref}
         {...props}
       />
     </div>
-  );
-}
+  )
+})
+

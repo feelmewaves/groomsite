@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'Lifehack';
-  src: url('/public/font/ofont.ru_Lifehack\ Sans.ttf') format('truetype');
+  src: url('/font/ofont.ru_Lifehack\ Sans.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,7 +13,7 @@ html {
 }
 
  body {
-	font-family: 'Montserrat', sans-serif;
+	// font-family: 'Montserrat', sans-serif;
  	color: $c-def-dark-grey;
 	font-size: $fz-def;
 	font-family: 'Lifehack', sans-serif;
