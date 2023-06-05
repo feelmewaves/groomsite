@@ -20,7 +20,7 @@
     @extend %container;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .advSection{
     background-image: url("images/advback.png");
@@ -30,4 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    h3{
+        font-size: $fz-xl;
+    }
 }

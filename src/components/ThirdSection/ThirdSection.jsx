@@ -1,5 +1,4 @@
 import s from './ThirdSection.module.scss'
-import { useEffect, useState } from 'react'
 import EnrollBtn from '@ui/EnrollBtn'
 
 const ThirdSection = () => {
