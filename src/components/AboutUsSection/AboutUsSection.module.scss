@@ -2,18 +2,13 @@
 
 .aboutUsSection{
     @extend %section;
-    background: $c-def-white;
-    h2{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 40px; 
-    }
 }
 .contentWrapper{
+    @extend %container;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-top: 40px;
 }
 
 .info{
@@ -22,7 +17,6 @@
     flex-direction: column;
     justify-content: center;
     
-
     h3{
         font-size: $fz-md;
         font-weight: 500;
@@ -31,15 +25,12 @@
         padding-top: 10px;
     }
 
-   
-
     .numberBlock{
         display: flex;
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
         padding-top: 20px;
-
 
         .numbers{
             display: flex;
@@ -55,10 +46,4 @@
         }
     }
 
-}
-.contentWrapper{
-    @extend %container;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 }

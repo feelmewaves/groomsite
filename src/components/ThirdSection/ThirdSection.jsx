@@ -4,35 +4,6 @@ import EnrollBtn from '@ui/EnrollBtn'
 
 const ThirdSection = () => {
 
-	// const [currentIndex, setCurrentIndex] = useState(0)
-	// const [isTimerActive, setIsTimerActive] = useState(true)
-
-	// useEffect(() => {
-	// 	const timerId = setTimeout(() => {
-	// 		isTimerActive && nextSlide()
-	// 	}, 7000)
-
-	// 	return () => clearTimeout(timerId)
-	// }, [currentIndex, isTimerActive])
-
-	// const prevSlide = () => {
-	// 	setCurrentIndex(
-	// 		currentIndex <= 0
-	// 			? currentIndex + (eventsSectionData.length - 1)
-	// 			: currentIndex - 1
-	// 	)
-	// }
-	// const nextSlide = () => {
-	// 	setCurrentIndex(
-	// 		currentIndex === eventsSectionData.length - 1
-	// 			? currentIndex - (eventsSectionData.length - 1)
-	// 			: currentIndex + 1
-	// 	)
-	// }
-	// const setSlide = (index) => {
-	// 	setCurrentIndex(index)
-	// }
-
 	return (
 		<section className={s.thirdSection}>
 			<h2>Хотите так же? Приходите к нам!</h2>

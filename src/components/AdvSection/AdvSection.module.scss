@@ -20,11 +20,11 @@
     @extend %container;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .advSection{
     background-image: url("images/advback.png");
-     background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 65vh;
     display: flex;

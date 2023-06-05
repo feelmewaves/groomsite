@@ -1,66 +1,86 @@
 @import '@scss/vars.scss';
 
+.servicesAndPricesSection {
+  @extend %section;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 
-.servicesAndPricesSection{
-    @extend %section;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    h2{
-        
-        margin-bottom: 40px;
-    }
-
-    
-
-.contentWrapper{
+  .contentWrapper {
     @extend %container;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
+    width: 70%;
 
-    .blocks{
+    .blocks {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 50px;
+      width: 100%;
+
+      .wrapper {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        
 
-        .wrapper{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 23%;
-            background-color: $c-def-light-grey;
-            border-radius: 15px;
-            padding: 15px;
-            height: 240px;
-
-            p{
-                width: 70%;
-                text-align: center;
-                padding-top: 10px;
-
-            }
-
-
-           img{
-            border-radius: 50px;
-           }
-
+        position: relative;
+        background-color: $c-def-light-grey;
+        border-radius: 15px;
+        padding-top: 60px;
+        height: 260px;
+        width: 22%;
+        p {
+          width: 100%;
+          text-align: center;
+          padding-top: 20px;
         }
-    }
-    .changeInfo{
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
 
-        .info{
-            width: 40%;
+        img {
+          border-radius: 50px;
+          position: absolute;
+          top: -20px;
+          width: 20%;
         }
+      }
     }
-}
+    .changeInfo {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+			width: 100%;
+
+      .info {
+        width: 60%;
+        padding: 50px 0px 30px 30px;
+				font-size: $fz-def;
+      }
+      table {
+        font-family: 'Montserrat';
+        tr {
+          th {
+            font-family: 'Lifehack';
+            font-size: $fz-md;
+          }
+          td {
+            font-size: $fz-sm;
+          }
+        }
+        thead th:nth-child(1) {
+          width: 50%;
+        }
+        thead th:nth-child(2) {
+          width: 25%;
+        }
+        thead th:nth-child(3) {
+          width: 25%;
+        }
+      }
+    }
+  }
 }

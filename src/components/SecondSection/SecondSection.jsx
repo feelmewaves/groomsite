@@ -15,7 +15,7 @@ const SecondSection = () => {
                 <img className={s.img8} src={`images/sec8.png`} />
                 <img className={s.img9} src={`images/sec9.png`} />
 			</div>
-            <h3>Смотрите больше работ в нашем Instagram</h3>
+            <h3>Смотрите больше работ в нашей группе <a href='#'>Вконтакте</a></h3>
 		</section>
 	)
 }
