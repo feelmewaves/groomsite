@@ -1,35 +1,44 @@
 @import '@scss/vars.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .popupInner { 
 	background-color: $c-def-light-grey;
-	padding: 20px;
-	border-radius: 5px;
+	max-width: 700px;
+	padding: 60px;
+	border-radius: 20px;
 
-	max-width: 600px;
 	width: 100%;
 
 	display: flex;
 	gap: 36px;
 	flex-direction: column;
+
+	position: relative;
+}
+
+.popupImage {
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-top-right-radius: 20px;
+}
+
+.thanksPopupImage {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-bottom-right-radius: 20px;
 }
 
 .popupTitle {
 	font-size: 54px;
 	font-weight: 600;
 	letter-spacing: 2.5px;
+
+	h2 {
+		align-items: start;
+		justify-content: start;
+	}
 }
 
 .popupDescription {

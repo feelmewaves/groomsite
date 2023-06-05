@@ -6,7 +6,9 @@
 			"@components/*": ["src/components/*"],
 			"@pages/*": ["src/components/pages/*"],
 			"@ui/*": ["src/components/ui/*"],
-			"@scss/*": ["src/styles/*"]
+			"@scss/*": ["src/styles/*"],
+			"@api/*": ["src/api/*"],
+			"@utils/*": ["src/utils/*"]
 		}
 	}
 }

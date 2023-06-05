@@ -1,0 +1,52 @@
+{
+  "feedbacks": [
+    {
+      "id": 1,
+      "ownerName": "Check",
+      "petName": "Test",
+      "feedback": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur qui, quas praesentium, tempora amet ex quo nemo nisi officia repellendus enim impedit sed reiciendis laboriosam, autem quis repudiandae magnam molestiae incidunt error? Totam consectetur quae quidem fugiat. Praesentium neque voluptas sequi voluptate quas natus minima quasi, doloremque beatae maiores incidunt optio eveniet inventore sint, atque qui libero molestias voluptatem magni explicabo, necessitatibus enim assumenda. Blanditiis maxime iste impedit esse adipisci recusandae saepe similique qui at accusantium repudiandae hic, dolor laborum exercitationem aspernatur. Explicabo tempora beatae voluptas doloribus repellendus illo praesentium, officiis doloremque enim ipsam, dolores quo? Iusto quos architecto illum?",
+      "rating": "5"
+    },
+    {
+      "id": 2,
+      "ownerName": "Check",
+      "petName": "Test",
+      "feedback": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur qui, quas praesentium, tempora amet ex quo nemo nisi officia repellendus enim impedit sed reiciendis laboriosam, autem quis repudiandae magnam molestiae incidunt error? Totam consectetur quae quidem fugiat. Praesentium neque voluptas sequi voluptate quas natus minima quasi, doloremque beatae maiores incidunt optio eveniet inventore sint, atque qui libero molestias voluptatem magni explicabo, necessitatibus enim assumenda. Blanditiis maxime iste impedit esse adipisci recusandae saepe similique qui at accusantium repudiandae hic, dolor laborum exercitationem aspernatur. Explicabo tempora beatae voluptas doloribus repellendus illo praesentium, officiis doloremque enim ipsam, dolores quo? Iusto quos architecto illum?",
+      "rating": "5"
+    },
+    {
+      "id": 3,
+      "ownerName": "Check",
+      "petName": "Test",
+      "feedback": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur qui, quas praesentium, tempora amet ex quo nemo nisi officia repellendus enim impedit sed reiciendis laboriosam, autem quis repudiandae magnam molestiae incidunt error? Totam consectetur quae quidem fugiat. Praesentium neque voluptas sequi voluptate quas natus minima quasi, doloremque beatae maiores incidunt optio eveniet inventore sint, atque qui libero molestias voluptatem magni explicabo, necessitatibus enim assumenda. Blanditiis maxime iste impedit esse adipisci recusandae saepe similique qui at accusantium repudiandae hic, dolor laborum exercitationem aspernatur. Explicabo tempora beatae voluptas doloribus repellendus illo praesentium, officiis doloremque enim ipsam, dolores quo? Iusto quos architecto illum?",
+      "rating": "5"
+    },
+    {
+      "id": 4,
+      "ownerName": "Check",
+      "petName": "Test",
+      "feedback": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur qui, quas praesentium, tempora amet ex quo nemo nisi officia repellendus enim impedit sed reiciendis laboriosam, autem quis repudiandae magnam molestiae incidunt error? Totam consectetur quae quidem fugiat. Praesentium neque voluptas sequi voluptate quas natus minima quasi, doloremque beatae maiores incidunt optio eveniet inventore sint, atque qui libero molestias voluptatem magni explicabo, necessitatibus enim assumenda. Blanditiis maxime iste impedit esse adipisci recusandae saepe similique qui at accusantium repudiandae hic, dolor laborum exercitationem aspernatur. Explicabo tempora beatae voluptas doloribus repellendus illo praesentium, officiis doloremque enim ipsam, dolores quo? Iusto quos architecto illum?",
+      "rating": "5"
+    }
+  ],
+  "records": [
+    {
+      "name": "Александр",
+      "service": "Стрижка",
+      "number": "89953396802",
+      "date": "2023-06-06T22:37:54.000Z",
+      "created_date": "2023-06-05T22:38:10.246Z",
+      "id": 1,
+      "verify": false
+    },
+    {
+      "name": "Александр 2",
+      "service": "Стрижка",
+      "number": "89953396802",
+      "date": "2023-06-07T22:44:58.000Z",
+      "created_date": "2023-06-05T22:45:20.507Z",
+      "id": 2,
+      "verify": true
+    }
+  ]
+}

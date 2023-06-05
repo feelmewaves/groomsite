@@ -1,10 +1,11 @@
+import { formateDate } from '@/utils'
 import { Checkbox } from '../ui/Checkbox'
 import s from './AdminPanel.module.scss'
 
 export function Record({ record, onChangeVerify }) {
   return (
     <>
-      <div>Дата заявки: {record.created_date}</div>
+      <div>Дата заявки: {formateDate(record.created_date)}</div>
       <div className={s.record}>
         <div className={s.recordInfo}>
           <div>
@@ -13,7 +14,7 @@ export function Record({ record, onChangeVerify }) {
           </div>
           <div>
             <div>Услуга: {record.service}</div>
-            <div>Дата: {record.date}</div>
+            <div>Дата: {formateDate(record.date)}</div>
           </div>
         </div>
         <div>

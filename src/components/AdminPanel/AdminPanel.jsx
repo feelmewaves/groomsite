@@ -3,91 +3,41 @@ import s from './AdminPanel.module.scss';
 import cn from 'classnames';
 import { Record } from './Record';
 import { Feedback } from './Feedback';
-
-const records = [
-  {
-    id: 1,
-    name: 'Александр',
-    number: '89953396802',
-    service: 'Стрижка',
-    date: '05-06-2023',
-    verify: false,
-    created_date: '05-05-2023',
-  },
-  {
-    id: 2,
-    name: 'Александр',
-    number: '89953396802',
-    service: 'Стрижка',
-    date: '05-06-2023',
-    verify: false,
-    created_date: '05-05-2023',
-  },
-  {
-    id: 3,
-    name: 'Александр',
-    number: '89953396802',
-    service: 'Стрижка',
-    date: '05-06-2023',
-    verify: true,
-    created_date: '05-05-2023',
-  },
-  {
-    id: 4,
-    name: 'Александр',
-    number: '89953396802',
-    service: 'Стрижка',
-    date: '05-06-2023',
-    verify: false,
-    created_date: '05-05-2023',
-  },
-]
-
-const recordsFeedback = [
-  {
-    id: 1,
-    ownerName: 'Check',
-    petName: 'Test',
-    feedback: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur qui, quas praesentium, tempora amet ex quo nemo nisi officia repellendus enim impedit sed reiciendis laboriosam, autem quis repudiandae magnam molestiae incidunt error? Totam consectetur quae quidem fugiat. Praesentium neque voluptas sequi voluptate quas natus minima quasi, doloremque beatae maiores incidunt optio eveniet inventore sint, atque qui libero molestias voluptatem magni explicabo, necessitatibus enim assumenda. Blanditiis maxime iste impedit esse adipisci recusandae saepe similique qui at accusantium repudiandae hic, dolor laborum exercitationem aspernatur. Explicabo tempora beatae voluptas doloribus repellendus illo praesentium, officiis doloremque enim ipsam, dolores quo? Iusto quos architecto illum?',
-    rating: '5'
-  },
-  {
-    id: 2,
-    ownerName: 'Check',
-    petName: 'Test',
-    feedback: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur qui, quas praesentium, tempora amet ex quo nemo nisi officia repellendus enim impedit sed reiciendis laboriosam, autem quis repudiandae magnam molestiae incidunt error? Totam consectetur quae quidem fugiat. Praesentium neque voluptas sequi voluptate quas natus minima quasi, doloremque beatae maiores incidunt optio eveniet inventore sint, atque qui libero molestias voluptatem magni explicabo, necessitatibus enim assumenda. Blanditiis maxime iste impedit esse adipisci recusandae saepe similique qui at accusantium repudiandae hic, dolor laborum exercitationem aspernatur. Explicabo tempora beatae voluptas doloribus repellendus illo praesentium, officiis doloremque enim ipsam, dolores quo? Iusto quos architecto illum?',
-    rating: '5'
-  },
-  {
-    id: 3,
-    ownerName: 'Check',
-    petName: 'Test',
-    feedback: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur qui, quas praesentium, tempora amet ex quo nemo nisi officia repellendus enim impedit sed reiciendis laboriosam, autem quis repudiandae magnam molestiae incidunt error? Totam consectetur quae quidem fugiat. Praesentium neque voluptas sequi voluptate quas natus minima quasi, doloremque beatae maiores incidunt optio eveniet inventore sint, atque qui libero molestias voluptatem magni explicabo, necessitatibus enim assumenda. Blanditiis maxime iste impedit esse adipisci recusandae saepe similique qui at accusantium repudiandae hic, dolor laborum exercitationem aspernatur. Explicabo tempora beatae voluptas doloribus repellendus illo praesentium, officiis doloremque enim ipsam, dolores quo? Iusto quos architecto illum?',
-    rating: '5'
-  },
-  {
-    id: 4,
-    ownerName: 'Check',
-    petName: 'Test',
-    feedback: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur qui, quas praesentium, tempora amet ex quo nemo nisi officia repellendus enim impedit sed reiciendis laboriosam, autem quis repudiandae magnam molestiae incidunt error? Totam consectetur quae quidem fugiat. Praesentium neque voluptas sequi voluptate quas natus minima quasi, doloremque beatae maiores incidunt optio eveniet inventore sint, atque qui libero molestias voluptatem magni explicabo, necessitatibus enim assumenda. Blanditiis maxime iste impedit esse adipisci recusandae saepe similique qui at accusantium repudiandae hic, dolor laborum exercitationem aspernatur. Explicabo tempora beatae voluptas doloribus repellendus illo praesentium, officiis doloremque enim ipsam, dolores quo? Iusto quos architecto illum?',
-    rating: '5'
-  }
-];
+import { getFeedbacks, getRecords, updateRecords } from '@/api';
 
 export function AdminPanel() {
   const [tabIndex, setTabIndex] = useState(0);
-  const [rerender, setRerender] = useState(false);
+  const [records, setRecords] = useState([]);
+  const [recordsFeedback, setRecordsFeedback] = useState([]);
+
+  useEffect(() => {
+    if (tabIndex === 0) {
+      getFeedbacks().then(data => setRecordsFeedback(data));
+    } else {
+      getRecords().then(data => setRecords(data));
+    }
+  }, [tabIndex])
 
   function handleChangeTab(index) {
     setTabIndex(index);
   }
 
   function onChangeVerify(id) {
-    const data = tabIndex === 0 ? recordsFeedback : records;
+    setRecords(prevState => ([
+      ...prevState.map(item => {
+        if (item.id === id ) {
+          return {
+            ...item,
+            verify: !item.verify,
+          }
+        }
+        return item
+      })
+    ]))
 
-    const findObject = data.find(item => item.id === id);
-    findObject.verify = !findObject.verify;
-    setRerender(prevState => !prevState);
+    updateRecords(id, {
+      verify: !records.find(item => item.id === id).verify
+    })
   }
 
   return (

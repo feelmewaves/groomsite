@@ -12,6 +12,8 @@ export default defineConfig({
 			'@pages': path.resolve(__dirname, './src/components/pages/'),
 			'@ui': path.resolve(__dirname, './src/components/ui/'),
 			'@scss': path.resolve(__dirname, './src/styles/'),
+			'@api': path.resolve(__dirname, './src/api/'),
+			'@utils': path.resolve(__dirname, './src/utils/'),
 		},
 	},
 	css: {
