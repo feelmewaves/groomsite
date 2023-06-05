@@ -3,11 +3,11 @@ import s from './Footer.module.scss'
 const Footer = () => {
     return (
         <div className={s.footer}>
-				<div className={s.leftWrapper}>
+				<div className={s.contentWrapper}>
 					<div className={s.logo}>
 					<img src='logo2.png' alt='logo' />
 					</div>
-					<div className={s.secondPart}>
+					<div className={s.wrapper}>
                     	<h3>Услуги</h3>
 						<ul>
 							<li>
@@ -25,7 +25,7 @@ const Footer = () => {
 						</ul>
 					</div>
 				
-				<div className={s.thirdPart}>
+				<div className={s.wrapper}>
 					<h3>О компании</h3>
 					<ul>
 						<li>
@@ -42,7 +42,7 @@ const Footer = () => {
 						</li>
 					</ul>
 				</div>
-                <div className={s.fourthPart}>
+                <div className={s.wrapper}>
 					<h3>+7 (910) 406-52-87</h3>
 					<ul>
 						<li>

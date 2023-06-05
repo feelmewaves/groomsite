@@ -7,6 +7,7 @@ import AboutUsSection from '@components/AboutUsSection'
 import AdvSection from '@components/AdvSection'
 import SecondSection from '@components/SecondSection'
 import ThirdSection from '@components/ThirdSection'
+import FeedbackSection from '@components/FeedbackSection'
 import ServicesAndPricesSection from '@components/ServicesAndPricesSection'
 
 
@@ -22,6 +23,7 @@ const Main = () => {
 				<AdvSection/>
 				<SecondSection/>
 				<ThirdSection/>
+				<FeedbackSection/>
 				<LineTop/>
 			</main>
 		</HeaderFooterLayout>

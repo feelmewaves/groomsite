@@ -7,44 +7,31 @@
 	right: 0;
 	bottom: 0;
 	z-index: 100;
+	a{
+		font-family: 'Montserrat';
+	}
 
-	.leftWrapper {
+	.contentWrapper {
 		@extend %container;
 		padding: 25px 15px;
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		flex-direction: row;
 		justify-content: space-between;
 		color: $c-def-dark-grey;
 		
 	
-		.secondPart {
-			position: relative;
+		.wrapper{
+		display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
-			ul {
-				
-
-				li {
-					& + li {
-						margin-top: 10px;
-					}
-				}
-			}
+		h3{
+			font-size: $fz-md;
+			font-weight: 500;
+		}
 		}
 	}
 
-	.thirdPart {
-		ul {
-			
-
-			li {
-				
-
-				& + li {
-					margin-top: 10px;
-				}
-			}
-		}
-	}
-
+	
 }

@@ -1,0 +1,34 @@
+@import '@scss/vars.scss';
+
+.feedbackSection {
+  @extend %section;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.contentWrapper{
+    @extend %container;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $c-def-light-grey;
+        border-radius: 15px;
+        padding: 20px 45px;
+        height: 350px;
+        width: 30%;
+        p {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        }
+    }
+}

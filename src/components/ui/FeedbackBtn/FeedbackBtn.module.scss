@@ -1,0 +1,40 @@
+@import '@scss/vars.scss';
+
+.feedbackBtn {
+	width: 100%;
+	max-width: 270px;
+	padding: 20px 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $c-orange;
+	font-weight: 700;
+	background-color: $c-def-light-grey;
+    border: 3px solid $c-orange;
+	border-radius: $br-max;
+	transition: $transition;
+    margin-top: 25px;
+
+	&:hover {
+		background-color: $c-light-orange;
+		color: $c-orange;
+	}
+	
+
+
+	span{
+		font-family: 'Montserrat';
+
+	}
+}
+
+.outlineBtn {
+		background-color: $c-light-orange;
+		color: $c-orange;
+		border: 1px solid $c-orange;
+
+		&:hover {
+			background-color: $c-orange;
+			color: $c-def-white;
+		}
+}
