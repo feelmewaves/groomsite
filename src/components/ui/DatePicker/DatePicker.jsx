@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import DatePickerLibrary from 'react-datepicker';
 import ru from 'date-fns/locale/ru';
 import './DatePicker.scss';

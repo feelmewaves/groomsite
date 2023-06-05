@@ -18,14 +18,25 @@
 		background-color: $c-light-orange;
 		color: $c-orange;
 	}
-	&:focus {
-		background-color: #c2383d;
-		color: $c-def-white;
-	}
+	// &:focus {
+	// 	background-color: #c2383d;
+	// 	color: $c-def-white;
+	// }
 
 
 	span{
 		font-family: 'Montserrat';
 
 	}
+}
+
+.outlineBtn {
+		background-color: $c-light-orange;
+		color: $c-orange;
+		border: 1px solid $c-orange;
+
+		&:hover {
+			background-color: $c-orange;
+			color: $c-def-white;
+		}
 }

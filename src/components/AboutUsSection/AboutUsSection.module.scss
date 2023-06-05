@@ -31,7 +31,9 @@
         width: 100%;
         justify-content: space-between;
         padding-top: 20px;
-
+        align-items: flex-start;
+        justify-content: space-between;
+        
         .numbers{
             display: flex;
             flex-direction: column;

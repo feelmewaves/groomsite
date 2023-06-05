@@ -1,0 +1,117 @@
+.panelWrapper {
+  width: 100%;
+	max-width: 1440px;
+	padding: 32px;
+  height: 90%;
+  background: $c-def-light-grey;
+
+  border-radius: 32px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.tabsContainer {
+  max-width: 320px;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  & .tab {
+    background: $c-def-white;
+    border: 1px solid $c-orange;
+    padding: 8px 16px;
+    border-radius: 32px;
+    
+    font-size: 24px;
+    text-align: center;
+
+    cursor: pointer;
+  }
+
+  & .tabActive {
+    background-color: $c-light-orange;
+  }
+}
+
+.infoContainer {
+  width: 100%;
+  height: 100%;
+
+  background: $c-def-white;
+  border-radius: 32px;
+
+  padding: 32px;
+
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.infoContainerTitle {
+  font-size: 24px;
+}
+
+.recordsBlock {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.record, .feedback {
+  padding: 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1px solid $c-orange;
+  border-radius: 16px;
+
+  .recordInfo {
+    width: 60%;
+    padding: 4px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+
+    & > div {
+      flex: 1;
+    }
+  }
+}
+
+.feedback {
+  border: none;
+
+  .feedbackInfo {
+    padding: 4px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    .mainInfo {
+      border-right: 1px solid rgba(0,0,0, 0.25);
+      padding-right: 8px;
+
+      min-width: 160px;
+    }
+  }
+}
+
+.deleteButton {
+  padding: 6px;
+  font-size: 14px;
+  width: 70%;
+  margin-top: 16px;
+}

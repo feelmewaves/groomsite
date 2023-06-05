@@ -13,7 +13,7 @@ export const Input = forwardRef(({
   ...props
 }, ref) => {
   return (
-    <div>
+    <div className={className}>
       {label ? (
         <div className={s.label}>
           <label htmlFor={name}>{label}</label>

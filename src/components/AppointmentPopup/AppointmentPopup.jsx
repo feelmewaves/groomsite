@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import s from './ApointmentPopup.module.scss';
 import { Input } from '../ui/Input';
 import { Select } from '../ui/SelectInput';
 import { DatePicker } from '../ui/DatePicker';
 import { useForm } from 'react-hook-form';
+import { Checkbox } from '../ui/Checkbox';
 
 const serviceList = [
   { value: 'haircut', label: 'Стрижка' },
@@ -24,10 +25,6 @@ export const AppointmentPopup = ({ togglePopup }) => {
   function handleClickEmpty(e) {
     togglePopup();
   }
-
-  useEffect(() => {
-    console.log({ ...register('test') })
-  }, [])
 
   return (
     <div className={s.popup} onClick={handleClickEmpty}>
@@ -62,12 +59,9 @@ export const AppointmentPopup = ({ togglePopup }) => {
             />
           </div>
           <div className={s.policyBlock}>
-            <input
-              type="checkbox"
+            <Checkbox 
               id="policy-agreement"
               name="policy-agreement"
-              required
-              className={s.customCheckbox}
             />
             <label htmlFor="policy-agreement">
               <p>Я согласен с <span className={s.policyInfo}>политикой конфиденциальности</span></p>

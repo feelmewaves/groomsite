@@ -1,0 +1,9 @@
+@import '@scss/vars.scss';
+
+
+.adminWrapper {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 84px - 190px);
+}
