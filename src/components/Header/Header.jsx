@@ -32,7 +32,6 @@ const Header = () => {
 				<div className={s.headerWrapperRight}>
 					<a className={s.number} href='#'>
                         <h3>+7 (910) 404-52-87</h3>
-                        <span className={s.numberText}>Перезвоните мне</span>
                     </a>
 				</div>
 			</div>

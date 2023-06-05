@@ -7,8 +7,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 40px;
-        
+        margin-bottom: 40px; 
     }
 }
 .contentWrapper{
@@ -22,27 +21,36 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    padding: 30px;
+    
+
+    h3{
+        font-size: $fz-md;
+        font-weight: 500;
+    }
+    p{
+        padding-top: 10px;
+    }
 
    
 
     .numberBlock{
         display: flex;
         flex-direction: row;
-         align-items: flex-start;
-         justify-content: space-between;
-        
-         padding-top: 20px;
+        width: 100%;
+        justify-content: space-between;
+        padding-top: 20px;
 
 
         .numbers{
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             justify-content: center;
+            text-align: center;
             
            .boldNumb{
             font-size: $fz-xl;
+            font-weight: 700;
            }
         }
     }

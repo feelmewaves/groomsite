@@ -26,8 +26,11 @@
 		&Right {
 			display: flex;
 			align-items: center;
-			
 			justify-content: flex-end;
+
+			.number{
+				font-size: $fz-md;
+			}
 		}
 	}
 }
