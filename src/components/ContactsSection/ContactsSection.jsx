@@ -35,9 +35,9 @@ const ContactsSection = () => {
         </div>
         <div className={s.wrapper}>
           <div className={s.info}><FiMapPin style={style}/><p>Калининград, ул. Горького 166</p></div>
-          <div className={s.info}><GrMail style={style}/><p>+7 (999) 999-99-99</p></div>
-          <div className={s.info}><FiPhone style={style}/><p>pethouse@gm.com</p></div>
           <div className={s.info}><AiFillClockCircle style={style}/><p>Ежедневно с 09:00 до 22:00</p></div>
+          <div className={s.info}><FiPhone style={style}/><p>+7 (999) 999-99-99</p></div>
+          <div className={s.info}><GrMail style={style}/><p>pethouse@gm.com</p></div>
         </div>
       </div>
     </section>

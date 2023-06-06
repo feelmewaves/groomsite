@@ -31,7 +31,7 @@ const Header = () => {
 				<Nav />
 				<div className={s.headerWrapperRight}>
 					<a className={s.number} href='#'>
-                        <h3>+7 (910) 404-52-87</h3>
+                        <h3>+7 (999) 999-99-99</h3>
                     </a>
 				</div>
 			</div>
