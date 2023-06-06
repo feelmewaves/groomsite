@@ -2,7 +2,7 @@ import s from './SecondSection.module.scss'
 
 const SecondSection = () => {
 	return (
-		<section className={s.secondSection}>
+		<section id="ourworks" className={s.secondSection}>
             <h2>Посмотрите, как мы умеем</h2>
 			<div className={s.wrapper}>
                 <img className={s.img1} src={`images/sec1.png`} />

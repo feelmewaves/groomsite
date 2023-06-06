@@ -24,7 +24,7 @@ const Header = () => {
 		<header className={`${s.header} ${isOnTop ? '' : s.active}`}>
 			<div className={s.headerWrapper}>
 				<div className={s.headerWrapperLeft}>
-					<a className={s.logo} href='#'>
+					<a className={s.logo} href='#firstsection'>
 						<img src='logo2.png' alt='logo' />
 					</a>
 				</div>

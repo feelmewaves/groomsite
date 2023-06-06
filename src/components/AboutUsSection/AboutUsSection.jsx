@@ -4,7 +4,7 @@ import Carousel from '@components/Carousel'
 const AboutUsSection = () => {
 
 	return (
-		<section className={s.aboutUsSection}>
+		<section id="aboutus" className={s.aboutUsSection}>
 				<h2>Почему нам доверяют</h2>
 				<div className={s.contentWrapper}>
 					<div className={s.slider}>

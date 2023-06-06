@@ -3,7 +3,7 @@ import s from './ServicesAndPricesSection.module.scss'
 
 const ServicesAndPricesSection = () => {
 	return (
-		<section className={s.servicesAndPricesSection}>
+		<section id="services" className={s.servicesAndPricesSection}>
 			<div className={s.contentWrapper}>
                 <h2>Услуги и цены</h2>
                 <div className={s.blocks}>

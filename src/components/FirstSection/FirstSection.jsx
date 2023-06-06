@@ -19,7 +19,7 @@ const FirstSection = () => {
 	}
 
 	return (
-		<section className={s.firstSection}>
+		<section id="firstsection" className={s.firstSection}>
 			<div className={s.contentWrapper}>
 				<div className={s.wrapper}>
 					<p>Груминг в Калининграде</p>

@@ -22,8 +22,8 @@ const Main = () => {
 				<ServicesAndPricesSection/>
 				<AdvSection/>
 				<SecondSection/>
-				<ThirdSection/>
 				<FeedbackSection/>
+				<ThirdSection/>
 				<LineTop/>
 			</main>
 		</HeaderFooterLayout>

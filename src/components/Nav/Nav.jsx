@@ -5,19 +5,19 @@ const Nav = () => {
 		<nav className={s.nav}>
 			<ul>
 				<li>
-					<a href='#'>О нас</a>
+					<a href='#aboutus'>О нас</a>
 				</li>
 				<li>
-					<a href='#'>Услуги</a>
+					<a href='#services'>Услуги</a>
 				</li>
 				<li>
-					<a href='#'>Наши работы</a>
+					<a href='#ourworks'>Наши работы</a>
 				</li>
                 <li>
-					<a href='#'>Отзывы</a>
+					<a href='#feedback'>Отзывы</a>
 				</li>
                 <li>
-					<a href='#'>Контакты</a>
+					<a href='#contacts'>Контакты</a>
 				</li>
 			</ul>
 		</nav>

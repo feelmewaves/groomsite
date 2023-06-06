@@ -18,7 +18,7 @@ const FeedbackSection = () => {
 	}
 
 	return (
-		<section className={s.feedbackSection}>
+		<section id="feedback" className={s.feedbackSection}>
 			<h2>Отзывы</h2>
 			<div className={s.contentWrapper}>
 				<div className={s.wrapper}>
