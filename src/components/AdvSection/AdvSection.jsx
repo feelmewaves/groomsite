@@ -1,5 +1,5 @@
+import { Enroll } from '../Enroll'
 import s from './AdvSection.module.scss'
-import EnrollBtn from '@ui/EnrollBtn'
 
 const AdvSection = () => {
 	return (
@@ -9,7 +9,7 @@ const AdvSection = () => {
 				<div className={s.wrapper}>
 					<h3>Запишитесь к нам!</h3>
 					<p>И получите скидку 15% на первое посещение</p>
-					<EnrollBtn />
+					<Enroll />
 				</div>
 			</div>
 		</section>

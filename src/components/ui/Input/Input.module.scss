@@ -16,3 +16,12 @@
     color: $c-def-light-grey;
   }
 }
+
+.inputError {
+  border: 2px solid #f05355;
+}
+
+.errorMessage {
+  color: #F05355;
+  font-size: 18px;
+}

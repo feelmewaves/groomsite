@@ -48,13 +48,15 @@ export const AppointmentPopup = ({handleChangePopup}) => {
         <Input
           label='Ваше имя'
           placeholder='Иван Иванов'
-          {...register('name')}
+          error={errors?.name?.message}
+          {...register('name', { required: "Обязательное поле"})}
         />
         <Input
           label='Ваш телефон'
           type='tel'
           placeholder='+7 (999) 352-11-23'
-          {...register('tel')}
+          {...register('tel', {required: "Обязательное поле"})}
+          error={errors?.tel?.message}
         />
         <div className={s.smallInputBlock}>
           <Select
@@ -63,6 +65,7 @@ export const AppointmentPopup = ({handleChangePopup}) => {
             control={control}
             placeholder={"Выберите услугу"}
             label="Услуги"
+            error={errors?.service?.message}
           />
           <DatePicker
             control={control}

@@ -7,7 +7,7 @@ export function ThanksPopup() {
       <div className={s.popupTitle}>
         <h2>Спасибо за отзыв!</h2>
       </div>
-      <img src="images/popupdog2.png" width="160" height="160" className={s.thanksPopupImage} />
+      <img src="images/popupcat2.png" width="140" height="120" className={s.thanksPopupImage} />
     </div>
   )
 }

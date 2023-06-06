@@ -46,30 +46,35 @@ export const FeedbackPopup = ({ handleChangePopup }) => {
         <Input
           label='Ваше имя'
           placeholder='Иван Иванов'
-          {...register('nameOwner')}
+          error={errors?.nameOwner?.message}
+          {...register('nameOwner', { required: "Обязательное поле"})}
         />
         <Input
           label='Имя питомца'
           placeholder='Дружок'
-          {...register('namePet')}
+          error={errors?.namePet?.message}
+          {...register('namePet', { required: "Обязательное поле"})}
         />
         <Input
           label='Ваша электронная почта'
           type='email'
           placeholder='example@site.ru'
-          {...register('email')}
+          error={errors?.email?.message}
+          {...register('email', { required: "Обязательное поле"})}
         />
         <Input
           label="Отзыв"
           placeholder="Напишите что-нибудь..."
           className={s.textAreaFeedback}
-          {...register('feedback')}
+          error={errors?.feedback?.message}
+          {...register('feedback', { required: "Обязательное поле"})}
         />
         <Select
           options={serviceList}
           name='rating'
           control={control}
           placeholder={"5"}
+          error={errors?.rating?.message}
           label="Выберите оценку"
         />
         <div className={s.policyBlock}>
