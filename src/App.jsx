@@ -1,7 +1,7 @@
 import { Admin } from './pages/Admin';
 import Main from './pages/Main'
 import s from './styles/App.module.scss'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {HashRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
 	return (

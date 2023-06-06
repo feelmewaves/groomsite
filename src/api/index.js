@@ -1,5 +1,7 @@
+const url = 'https://mini-working-lasagna.glitch.me'
+
 export async function postRecord(data) {
-  const upload = await fetch('http://localhost:3004/records', {
+  const upload = await fetch(`${url}/records`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -13,7 +15,7 @@ export async function postRecord(data) {
 }
 
 export async function postFeedback(data) {
-  const upload = await fetch('http://localhost:3004/feedbacks', {
+  const upload = await fetch(`${url}/feedbacks`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -27,7 +29,7 @@ export async function postFeedback(data) {
 }
 
 export async function getRecords() {
-  const upload = await fetch('http://localhost:3004/records');
+  const upload = await fetch(`${url}/records`);
 
   const resp = await upload.json();
 
@@ -43,7 +45,7 @@ export async function getFeedbacks() {
 }
 
 export async function updateRecords(id, data) {
-  const upload = await fetch(`http://localhost:3004/records/${id}`, {
+  const upload = await fetch(`${url}/records/${id}`, {
     method: 'PATCH',
     headers: {
       'Content-Type': 'application/json'
@@ -57,7 +59,7 @@ export async function updateRecords(id, data) {
 }
 
 export async function deleteFeedback(id) {
-  const upload = await fetch(`http://localhost:3004/feedbacks/${id}`, {
+  const upload = await fetch(`${url}/feedbacks/${id}`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json'
