@@ -1,51 +1,100 @@
-@import '@scss/vars.scss';
+@import "@scss/vars.scss";
 
-.aboutUsSection{
-    @extend %section;
+.aboutUsSection {
+  @extend %section;
 }
-.contentWrapper{
-    @extend %container;
+.contentWrapper {
+  @extend %container;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 56px;
+  margin-top: 40px;
+}
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+
+  h3 {
+    font-size: $fz-md;
+    font-weight: 500;
+  }
+  p {
+    padding-top: 10px;
+  }
+
+  .numberBlock {
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: space-between;
-    margin-top: 40px;
-}
-
-.info{
-    display: flex;
+    padding-top: 20px;
     align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-    
-    h3{
-        font-size: $fz-md;
-        font-weight: 500;
-    }
-    p{
-        padding-top: 10px;
-    }
+    justify-content: space-between;
 
-    .numberBlock{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-between;
-        padding-top: 20px;
-        align-items: flex-start;
-        justify-content: space-between;
-        
-        .numbers{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            
-           .boldNumb{
-            font-size: $fz-xl;
-            font-weight: 700;
-           }
-        }
-    }
+    .numbers {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
 
+      .boldNumb {
+        font-size: $fz-xl;
+        font-weight: 700;
+      }
+    }
+  }
 }
+
+.sliderWrapper {
+  width: 40%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.swiper {
+  height: 100%;
+}
+
+.swiperSlide {
+  padding: 40px;
+}
+
+.imgWrapper {
+  height: 100%;
+  border-radius: 32px;
+  overflow: hidden;
+  & img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// .swiper {
+//   width: 100%;
+//   height: 100%;
+// }
+
+// .swiper-slide {
+//   text-align: center;
+//   font-size: 18px;
+//   background: #fff;
+
+//   /* Center slide text vertically */
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .swiper-slide img {
+
+// }

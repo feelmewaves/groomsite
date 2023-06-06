@@ -1,0 +1,10 @@
+@import "@scss/vars.scss";
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: $c-orange;
+  
+  &::after {
+    font-size: 24px;
+  }
+}

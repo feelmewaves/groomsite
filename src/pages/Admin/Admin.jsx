@@ -15,7 +15,7 @@ export function Admin() {
   return (
     <HeaderFooterLayout>
       <div className={s.adminWrapper}>
-        {step !== 'login' ? <Login
+        {step === 'login' ? <Login
           onChangeStep={onChangeStep}
         /> : <AdminPanel />}
       </div>
