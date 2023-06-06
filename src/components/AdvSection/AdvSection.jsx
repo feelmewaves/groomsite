@@ -8,7 +8,7 @@ const AdvSection = () => {
 				<img src={`images/dogadv.jpg`} />
 				<div className={s.wrapper}>
 					<h3>Запишитесь к нам!</h3>
-					<p>И получите скидку 15% на первое посещение</p>
+					<h4>И получите скидку 15% на первое посещение</h4>
 					<Enroll />
 				</div>
 			</div>

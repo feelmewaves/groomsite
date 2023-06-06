@@ -5,14 +5,15 @@
     justify-content: center;
     margin-top: 30px;
 
-    p{
+    h4{
         padding-top: 10px;
-        width: 350px;
+        font-size: $fz-md;
+        font-weight: 500;
+        
     }
 
     h2{
         font-size: $fz-xl;
-        width: 400px;
         padding-top: 10px
     }
 }

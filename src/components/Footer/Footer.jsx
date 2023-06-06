@@ -1,4 +1,7 @@
 import s from './Footer.module.scss'
+import { FaTelegramPlane } from 'react-icons/fa'
+import { SlSocialVkontakte } from 'react-icons/sl'
+import { FaViber } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -29,24 +32,23 @@ const Footer = () => {
 					<h3>О компании</h3>
 					<ul>
 						<li>
-							<a href=''>О нас</a>
+							<a href="#aboutus">О нас</a>
 						</li>
 						<li>
-							<a href=''>Наши мастера</a>
-						</li>
-						<li>
-							<a href=''>Отзывы</a>
+							<a href="#feedback">Отзывы</a>
 						</li>
                         <li>
-							<a href=''>Контакты</a>
+							<a href="#contacts">Контакты</a>
 						</li>
 					</ul>
 				</div>
                 <div className={s.wrapper}>
 					<h3>+7 (910) 406-52-87</h3>
 					<ul>
-						<li>
-							<a href=''>Icons 3шт</a>
+						<li className={s.icons}>
+							<a href='#'><SlSocialVkontakte /></a>
+							<a href='#'><FaTelegramPlane /></a>
+							<a href='#'><FaViber /></a>
 						</li>
 						<li>
 							<a href=''>Политика конфиденциальности</a>
