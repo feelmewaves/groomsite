@@ -5,6 +5,7 @@ import cn from 'classnames';
 
 const sectionInfo = [
   {
+    id: 1,
     title: 'Стрижка',
     text: 'Профессиональная стрижка для кошек и собак любой породы',
     src: "images/serv1.PNG",
@@ -45,6 +46,7 @@ const sectionInfo = [
     ]
   },
   {
+    id: 2,
     title: 'Гигиенические процедуры',
     text: `Чистка ушей, глаз, зубов, стрижка когтей, экспресс-линька и многое другое`,
     src: "images/serv2.PNG",
@@ -68,6 +70,7 @@ const sectionInfo = [
     ]
   },
   {
+    id: 3,
     title: 'SPA-комплексы',
     text: `Премиальные маски для защиты и глубокого питания кожи и шерсти`,
     src: "images/serv3.PNG",
@@ -97,6 +100,7 @@ const sectionInfo = [
     
   },
   {
+    id: 4,
     title: 'Окрашивание',
     text: `Окрашивание шерсти в различные цвета специальной краской,окрашивание узором`,
     src: "images/serv4.PNG",
@@ -140,6 +144,7 @@ const ServicesAndPricesSection = () => {
                 [s.activeWrapper]: section.title === selectedSection
               })}
               onClick={() => handleClickSection(section.title)}
+              key={`block-info-${section.id}`}
             >
               <img src={section.src} />
               <h3>{section.title}</h3>
@@ -149,7 +154,7 @@ const ServicesAndPricesSection = () => {
         </div>
         {sectionInfo.map(section => 
           section.title === selectedSection ?
-          <div className={s.changeInfo}>
+          <div className={s.changeInfo} key={`info-${section.id}`}>
             <div className={s.info}>
               <h3>{section.title}</h3>
               <p>
@@ -168,8 +173,8 @@ const ServicesAndPricesSection = () => {
                 </thead>
                 <tbody>
                   { section?.servicePrice &&
-                    section.servicePrice.map(service => (
-                      <tr>
+                    section.servicePrice.map((service, index) => (
+                      <tr key={`tr-${section.id}-${service.name}-${index}`}>
                         <td>{service.name}</td>
                         <td className={s.elem}>{service.cat ? `от ${service.cat} р` : '-'}</td>
                         <td className={s.elem}>{service.dog ? `от ${service.dog} р` : '-'}</td>

@@ -37,7 +37,7 @@ export async function getRecords() {
 }
 
 export async function getFeedbacks() {
-  const upload = await fetch('http://localhost:3004/feedbacks');
+  const upload = await fetch(`${url}/feedbacks`);
 
   const resp = await upload.json();
 

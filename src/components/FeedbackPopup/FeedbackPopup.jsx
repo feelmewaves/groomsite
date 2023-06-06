@@ -47,27 +47,27 @@ export const FeedbackPopup = ({ handleChangePopup }) => {
           label='Ваше имя'
           placeholder='Иван Иванов'
           error={errors?.nameOwner?.message}
-          {...register('nameOwner', { required: "Обязательное поле"})}
+          {...register('nameOwner', { required: "Обязательное поле" })}
         />
         <Input
           label='Имя питомца'
           placeholder='Дружок'
           error={errors?.namePet?.message}
-          {...register('namePet', { required: "Обязательное поле"})}
+          {...register('namePet', { required: "Обязательное поле" })}
         />
         <Input
           label='Ваша электронная почта'
           type='email'
           placeholder='example@site.ru'
           error={errors?.email?.message}
-          {...register('email', { required: "Обязательное поле"})}
+          {...register('email', { required: "Обязательное поле" })}
         />
         <Input
           label="Отзыв"
           placeholder="Напишите что-нибудь..."
           className={s.textAreaFeedback}
           error={errors?.feedback?.message}
-          {...register('feedback', { required: "Обязательное поле"})}
+          {...register('feedback', { required: "Обязательное поле", maxLength: { message: 'Максимальное количество 100 символов', value: 100 } })}
         />
         <Select
           options={serviceList}

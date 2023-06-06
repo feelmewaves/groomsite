@@ -55,23 +55,10 @@
 	}
 }
 
-.enrollBtn {
-	width: 100%;
-	max-width: 220px;
-	padding: 15px 8px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	column-gap: 10px;
-	color: $c-def-white;
-	font-weight: 700;
-	background-color: $c-orange;
-	border-radius: $br-max;
-	transition: $transition;
-    margin-top: 10px;
+.swiper {
+  height: 100%;
+}
 
-	&:hover {
-		background-color: $c-light-orange;
-		color: $c-orange;
-	}
+.swiperSlide {
+  padding: 40px;
 }
