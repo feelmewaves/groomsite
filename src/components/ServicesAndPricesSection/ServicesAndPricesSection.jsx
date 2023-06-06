@@ -23,22 +23,22 @@ const sectionInfo = [
         dog: '2000',
       },
       {
-        name: 'Гигиеническая стрижка',
+        name: 'Креативный груминг',
         cat: '2000',
         dog: '2500',
       },
       {
-        name: 'Гигиеническая стрижка',
+        name: 'Модельная стрижка головы',
         cat: '500',
         dog: '650',
       },
       {
-        name: 'Гигиеническая стрижка',
+        name: 'Стрижка "Лев"',
         cat: '3500',
         dog: '',
       },
       {
-        name: 'Гигиеническая стрижка',
+        name: 'Пуделиные лапки',
         cat: '',
         dog: '200',
       },
@@ -48,17 +48,22 @@ const sectionInfo = [
     title: 'Гигиенические процедуры',
     text: `Чистка ушей, глаз, зубов, стрижка когтей, экспресс-линька и многое другое`,
     src: "images/serv2.PNG",
-    textContent: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, perferendis officia. Quam voluptas molestiae cupiditate, corrupti quo culpa nisi nostrum est! Iure nam veniam eum ipsum vel voluptates cupiditate alias?`,
+    textContent: `Проведём гигиенические процедуры для вашего любимца. Тримминг маленькой собаки (гриффон, цвергшнауцер) длится примерно 3-4 часа, крупной собаки (ризеншнауцер, эрдельтерьер) от 4 до 6 часов.`,
     servicePrice: [
       {
-        name: 'Гигиеническая стрижка',
-        cat: '2300',
-        dog: '2000',
+        name: 'Чистка глаз/ушей/зубов',
+        cat: '250',
+        dog: '300',
       },
       {
-        name: 'Гигиеническая стрижка',
+        name: 'Экспресс-линька',
         cat: '2000',
         dog: '2500',
+      },
+      {
+        name: 'Тримминг',
+        cat: '',
+        dog: '3000',
       },
     ]
   },
