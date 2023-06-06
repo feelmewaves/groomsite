@@ -1,5 +1,5 @@
+import { Enroll } from '../Enroll'
 import s from './ThirdSection.module.scss'
-import EnrollBtn from '@ui/EnrollBtn'
 
 const ThirdSection = () => {
 
@@ -16,7 +16,7 @@ const ThirdSection = () => {
 					<h3>После преображения</h3>
 				</div>
 			</div>
-			<EnrollBtn />
+			<Enroll />
 		</section>
 	)
 }

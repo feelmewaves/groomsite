@@ -1,5 +1,6 @@
 import React, { forwardRef } from 'react';
 import s from './Input.module.scss';
+import cn from 'classnames';
 
 export const Input = forwardRef(({
   className,
@@ -9,25 +10,23 @@ export const Input = forwardRef(({
   type = "text",
   value,
   onChange,
-  meta,
+  error,
   ...props
 }, ref) => {
+
+  const inputClass = cn(s.input, {
+    [s.inputError]: error
+  })
+
   return (
     <div className={className}>
-      {label ? (
+      {label &&  (
         <div className={s.label}>
           <label htmlFor={name}>{label}</label>
-          {meta && meta.touched && meta.error && (
-            <span>
-              {meta.error}
-            </span>
-          )}
         </div>
-      ) : (
-        meta && meta.touched && meta.error && <span>{meta.error}</span>
       )}
       <input
-        className={s.input}
+        className={inputClass}
         id={name}
         name={name}
         placeholder={placeholder}
@@ -37,6 +36,7 @@ export const Input = forwardRef(({
         ref={ref}
         {...props}
       />
+      {error && <span className={s.errorMessage}>{error}</span>}
     </div>
   )
 })
