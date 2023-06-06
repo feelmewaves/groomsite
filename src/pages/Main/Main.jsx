@@ -9,6 +9,7 @@ import SecondSection from '@components/SecondSection'
 import ThirdSection from '@components/ThirdSection'
 import FeedbackSection from '@components/FeedbackSection'
 import ServicesAndPricesSection from '@components/ServicesAndPricesSection'
+import ContactsSection from '@components/ContactsSection'
 
 
 
@@ -24,6 +25,7 @@ const Main = () => {
 				<SecondSection/>
 				<FeedbackSection/>
 				<ThirdSection/>
+				<ContactsSection/>
 				<LineTop/>
 			</main>
 		</HeaderFooterLayout>
