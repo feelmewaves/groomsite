@@ -25,14 +25,13 @@ const FirstSection = () => {
 					<p>Груминг в Калининграде</p>
 					<h1>Порадуйте<br /> своего питомца</h1>
 					<p>Запишитесь на стрижку и получите<br /> скидку 15% на первое знакомство</p>
-					<EnrollBtn togglePopup={togglePopup} />
+					<EnrollBtn onClick={togglePopup} />
 				</div>
 				<img src={`images/firstsec.jpg`} />
 			</div>
 			{
 				showPopup && <Popup togglePopup={togglePopup}>
 					{isPopupForm ? <AppointmentPopup handleChangePopup={handleChangePopup}/> : <ThanksPopup />}
-					
 				</Popup>
 			}
 		</section>

@@ -1,7 +1,7 @@
 import EnrollBtn from '../ui/EnrollBtn/EnrollBtn'
 import s from './AdminPanel.module.scss'
 
-export function Feedback({ feedback }) {
+export function Feedback({ feedback, onChangeDelete }) {
   return (
     <>
       <div className={s.feedback}>
@@ -10,10 +10,12 @@ export function Feedback({ feedback }) {
             <div>Имя: {feedback.ownerName}</div>
             <div>Имя питомца: {feedback.petName}</div>
             <div>Рейтинг: {feedback.rating}</div>
+            <div>Почта: {feedback.email}</div>
             <EnrollBtn 
               outline={true}
               text='Удалить'
               className={s.deleteButton}
+              onClick={() => onChangeDelete(feedback.id)}
             />
           </div>
           <div>

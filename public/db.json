@@ -1,34 +1,5 @@
 {
-  "feedbacks": [
-    {
-      "id": 1,
-      "ownerName": "Check",
-      "petName": "Test",
-      "feedback": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur qui, quas praesentium, tempora amet ex quo nemo nisi officia repellendus enim impedit sed reiciendis laboriosam, autem quis repudiandae magnam molestiae incidunt error? Totam consectetur quae quidem fugiat. Praesentium neque voluptas sequi voluptate quas natus minima quasi, doloremque beatae maiores incidunt optio eveniet inventore sint, atque qui libero molestias voluptatem magni explicabo, necessitatibus enim assumenda. Blanditiis maxime iste impedit esse adipisci recusandae saepe similique qui at accusantium repudiandae hic, dolor laborum exercitationem aspernatur. Explicabo tempora beatae voluptas doloribus repellendus illo praesentium, officiis doloremque enim ipsam, dolores quo? Iusto quos architecto illum?",
-      "rating": "5"
-    },
-    {
-      "id": 2,
-      "ownerName": "Check",
-      "petName": "Test",
-      "feedback": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur qui, quas praesentium, tempora amet ex quo nemo nisi officia repellendus enim impedit sed reiciendis laboriosam, autem quis repudiandae magnam molestiae incidunt error? Totam consectetur quae quidem fugiat. Praesentium neque voluptas sequi voluptate quas natus minima quasi, doloremque beatae maiores incidunt optio eveniet inventore sint, atque qui libero molestias voluptatem magni explicabo, necessitatibus enim assumenda. Blanditiis maxime iste impedit esse adipisci recusandae saepe similique qui at accusantium repudiandae hic, dolor laborum exercitationem aspernatur. Explicabo tempora beatae voluptas doloribus repellendus illo praesentium, officiis doloremque enim ipsam, dolores quo? Iusto quos architecto illum?",
-      "rating": "5"
-    },
-    {
-      "id": 3,
-      "ownerName": "Check",
-      "petName": "Test",
-      "feedback": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur qui, quas praesentium, tempora amet ex quo nemo nisi officia repellendus enim impedit sed reiciendis laboriosam, autem quis repudiandae magnam molestiae incidunt error? Totam consectetur quae quidem fugiat. Praesentium neque voluptas sequi voluptate quas natus minima quasi, doloremque beatae maiores incidunt optio eveniet inventore sint, atque qui libero molestias voluptatem magni explicabo, necessitatibus enim assumenda. Blanditiis maxime iste impedit esse adipisci recusandae saepe similique qui at accusantium repudiandae hic, dolor laborum exercitationem aspernatur. Explicabo tempora beatae voluptas doloribus repellendus illo praesentium, officiis doloremque enim ipsam, dolores quo? Iusto quos architecto illum?",
-      "rating": "5"
-    },
-    {
-      "id": 4,
-      "ownerName": "Check",
-      "petName": "Test",
-      "feedback": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur qui, quas praesentium, tempora amet ex quo nemo nisi officia repellendus enim impedit sed reiciendis laboriosam, autem quis repudiandae magnam molestiae incidunt error? Totam consectetur quae quidem fugiat. Praesentium neque voluptas sequi voluptate quas natus minima quasi, doloremque beatae maiores incidunt optio eveniet inventore sint, atque qui libero molestias voluptatem magni explicabo, necessitatibus enim assumenda. Blanditiis maxime iste impedit esse adipisci recusandae saepe similique qui at accusantium repudiandae hic, dolor laborum exercitationem aspernatur. Explicabo tempora beatae voluptas doloribus repellendus illo praesentium, officiis doloremque enim ipsam, dolores quo? Iusto quos architecto illum?",
-      "rating": "5"
-    }
-  ],
+  "feedbacks": [],
   "records": [
     {
       "name": "Александр",

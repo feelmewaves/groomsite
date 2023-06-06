@@ -2,7 +2,7 @@ import s from './EnrollBtn.module.scss'
 import cn from 'classnames';
 
 const EnrollBtn = ({
-	togglePopup, 
+	onClick, 
 	text = "Записаться",
 	outline = false,
 	className
@@ -12,7 +12,7 @@ const EnrollBtn = ({
 	}, className)
 
 	return (
-		<button className={btnClass} onClick={togglePopup}>
+		<button className={btnClass} onClick={onClick}>
 			<span>{text}</span>
 		</button>
 	)

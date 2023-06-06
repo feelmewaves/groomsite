@@ -25,10 +25,10 @@ const customStyles = {
   }),
 };
 
-export function Select({ options, name, control, ...props }) {
+export function Select({ options, name, control, placeholder, label, ...props }) {
   return (
     <div className={s.selectWrapper}>
-      <label htmlFor="service">Услуги</label>
+      <label htmlFor="service">{label}</label>
       <Controller
         control={control}
         name={name}
@@ -40,7 +40,7 @@ export function Select({ options, name, control, ...props }) {
             value={options.find(o => o.value === value)}
             onChange={onChange}
             label="Услуга"
-            placeholder="Выберите услугу"
+            placeholder={placeholder}
           />
         )}
       />

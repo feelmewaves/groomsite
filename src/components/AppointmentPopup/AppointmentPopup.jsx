@@ -61,6 +61,8 @@ export const AppointmentPopup = ({handleChangePopup}) => {
             options={serviceList}
             name='service'
             control={control}
+            placeholder={"Выберите услугу"}
+            label="Услуги"
           />
           <DatePicker
             control={control}

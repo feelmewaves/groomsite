@@ -12,6 +12,20 @@ export async function postRecord(data) {
   return resp;
 }
 
+export async function postFeedback(data) {
+  const upload = await fetch('http://localhost:3004/feedbacks', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
+
+  const resp = await upload.json();
+
+  return resp;
+}
+
 export async function getRecords() {
   const upload = await fetch('http://localhost:3004/records');
 
@@ -35,6 +49,19 @@ export async function updateRecords(id, data) {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(data)
+  })
+
+  const resp = await upload.json();
+
+  return resp;
+}
+
+export async function deleteFeedback(id) {
+  const upload = await fetch(`http://localhost:3004/feedbacks/${id}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json'
+    },
   })
 
   const resp = await upload.json();

@@ -31,9 +31,9 @@
 }
 
 .outlineBtn {
-		background-color: $c-light-orange;
 		color: $c-orange;
-		border: 1px solid $c-orange;
+		background-color: $c-def-light-grey;
+		border: 3px solid $c-orange;
 
 		&:hover {
 			background-color: $c-orange;

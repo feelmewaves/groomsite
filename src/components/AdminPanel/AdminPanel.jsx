@@ -3,7 +3,7 @@ import s from './AdminPanel.module.scss';
 import cn from 'classnames';
 import { Record } from './Record';
 import { Feedback } from './Feedback';
-import { getFeedbacks, getRecords, updateRecords } from '@/api';
+import { deleteFeedback, getFeedbacks, getRecords, updateRecords } from '@/api';
 
 export function AdminPanel() {
   const [tabIndex, setTabIndex] = useState(0);
@@ -40,6 +40,12 @@ export function AdminPanel() {
     })
   }
 
+  function onChangeDelete(id) {
+    setRecordsFeedback(prevState => prevState.filter(item => item.id !== id))
+
+    deleteFeedback(id);
+  }
+
   return (
     <div className={s.panelWrapper}>
       <div className={s.tabsContainer}>
@@ -73,6 +79,7 @@ export function AdminPanel() {
               <Feedback 
                 key={feedback.id}
                 feedback={feedback}
+                onChangeDelete={onChangeDelete}
               />
             ))
           }
