@@ -1,23 +1,24 @@
 import s from './Nav.module.scss'
+import { HashLink } from 'react-router-hash-link'
 
 const Nav = () => {
 	return (
 		<nav className={s.nav}>
 			<ul>
 				<li>
-					<a href='#aboutus'>О нас</a>
+					<HashLink to='/#aboutus'>О нас</HashLink>
 				</li>
 				<li>
-					<a href='#services'>Услуги</a>
+					<HashLink to='/#services'>Услуги</HashLink>
 				</li>
 				<li>
-					<a href='#ourworks'>Наши работы</a>
+					<HashLink to='/#ourworks'>Наши работы</HashLink>
 				</li>
                 <li>
-					<a href='#feedback'>Отзывы</a>
+					<HashLink to='/#feedback'>Отзывы</HashLink>
 				</li>
                 <li>
-					<a href='#contacts'>Контакты</a>
+					<HashLink to='/#contacts'>Контакты</HashLink>
 				</li>
 			</ul>
 		</nav>
